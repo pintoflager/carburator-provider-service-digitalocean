@@ -1,0 +1,49 @@
+default = "cx11"
+
+[[plan]]
+name = "s-1vcpu-512mb-10gb"
+arch = "x86"
+description = "vCPU: 1, RAM: 512 MB, SSD: 10 GB"
+
+[[plan]]
+name = "s-1vcpu-1gb"
+arch = "x86"
+description = "vCPU: 1, RAM: 1 GB, SSD: 25 GB"
+
+[[plan]]
+name = "s-1vcpu-2gb"
+arch = "x86"
+description = "vCPU: 1, RAM: 2 GB, SSD: 50 GB"
+
+[[plan]]
+name = "s-2vcpu-2gb"
+arch = "x86"
+description = "vCPU: 2, RAM: 2 GB, SSD: 60 GB"
+
+[[plan]]
+name = "s-2vcpu-4gb"
+arch = "x86"
+description = "vCPU: 2, RAM: 4 GB, SSD: 80 GB"
+
+[[plan]]
+name = "cps-4vcpu-s-4vcpu-8gb"
+arch = "x86"
+description = "vCPU: 4, RAM: 8 GB, SSD: 160 GB"
+
+
+# AMD processors
+[[plan]]
+name = "s-1vcpu-1gb-amd"
+description = "vCPU: 1, RAM: 1 GB, SSD: 25 GB"
+
+[[plan]]
+name = "s-1vcpu-2gb-amd"
+description = "vCPU: 1, RAM: 2 GB, SSD: 50 GB"
+
+[[plan]]
+name = "s-2vcpu-2gb-amd"
+description = "vCPU: 2, RAM: 2 GB, SSD: 60 GB"
+
+[[plan]]
+name = "s-2vcpu-4gb-amd"
+description = "vCPU: 2, RAM: 4 GB, SSD: 80 GB"

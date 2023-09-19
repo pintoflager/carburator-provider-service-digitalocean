@@ -1,0 +1,8 @@
+name = "digitalocean"
+version = "0.1.0"
+collection = "ServiceProvider"
+platforms = ["Client", "Server"]
+
+# List of provisioner names this provider supports
+provisioners = ["terraform"]
+secret_names = ["digitalocean_cloud_apikey"]

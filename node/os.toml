@@ -1,0 +1,41 @@
+default = "debian-11-x64"
+
+[[os]]
+name = "debian-10-x64"
+description = "Linux, Debian 10"
+
+[[os]]
+name = "debian-11-x64"
+description = "Linux, Debian 11"
+
+[[os]]
+name = "ubuntu-20-04-x64"
+description = "Linux, Ubuntu 20.04 LTS"
+
+[[os]]
+name = "ubuntu-22-04-x64"
+description = "Linux, Ubuntu 22.04 LTS"
+
+[[os]]
+name = "almalinux-8-x64"
+description = "Linux, Almalinux 8"
+
+[[os]]
+name = "almalinux-9-x64"
+description = "Linux, Almalinux 9"
+
+[[os]]
+name = "centos-7-x64"
+description = "Linux, CentOS 7 x64"
+
+[[os]]
+name = "centos-stream-9-x64"
+description = "Linux, CentOS stream 9 x64"
+
+[[os]]
+name = "rockylinux-8-x64"
+description = "Linux, Rockylinux 8"
+
+[[os]]
+name = "rockylinux-9-x64"
+description = "Linux, Rocky 9"
