@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-carburator print terminal info "Invoking Digital Ocean service provider..."
+carburator log info "Invoking Digital Ocean service provider..."
 
 ###
 # Executes on server node.
 #
 if [[ $1 == "server" ]]; then
-    carburator print terminal info \
+    carburator log info \
         "Floating IP create can only be invoked from client nodes."
     exit 0
 fi

@@ -4,7 +4,7 @@
 # Executes on server node.
 #
 if [[ $1 == "server" ]]; then
-    carburator print terminal info \
+    carburator log info \
         "Floating IP destroy can only be invoked from client nodes."
     exit 0
 fi

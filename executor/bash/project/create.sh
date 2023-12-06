@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-carburator print terminal info "Invoking Digital Ocean service provider..."
+carburator log info "Invoking Digital Ocean service provider..."
 
 ###
 # Executes on server node.
 #
 if [[ $1 == "server" ]]; then
-    carburator print terminal info \
+    carburator log info \
         "Project create can only be invoked from client nodes."
     exit 0
 fi
@@ -33,7 +33,7 @@ if [[ -z $root_pubkey ]]; then
 fi
 
 if [[ -z $root_pubkey ]]; then
-    carburator print terminal error \
+    carburator log error \
         "Unable to find path to root public SSH key from .exec.env"
     exit 120
 fi
@@ -50,4 +50,4 @@ carburator provisioner request \
         --provisioner "$provisioner" \
         --key-val "ROOT_SSH_PUBKEY=$root_pubkey" || exit 120
 
-carburator print terminal success "Digital Ocean project created."
+carburator log success "Digital Ocean project created."

@@ -4,7 +4,7 @@
 # Register on server node.
 #
 if [[ $1 == "server" ]]; then
-    carburator print terminal info \
+    carburator log info \
         "Digital Ocean service provider executes register only on client nodes"
     exit 0
 fi
@@ -24,7 +24,7 @@ if carburator has json service_provider.secrets -p .exec.json; then
         if ! carburator has secret "$secret" --user "$user"; then
             # ATTENTION: We know only one secret is present. Otherwise
             # prompt texts should be adjusted accordingly.
-            carburator print terminal warn \
+            carburator log warn \
                 "Could not find secret containing Digital Ocean cloud API token."
             
             carburator prompt secret "Digital Ocean cloud API key" \

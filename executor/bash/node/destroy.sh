@@ -4,7 +4,7 @@
 # Executes on server node.
 #
 if [[ $1 == "server" ]]; then
-    carburator print terminal info \
+    carburator log info \
         "Node destroy can only be invoked from client nodes."
     exit 0
 fi
@@ -35,7 +35,7 @@ fi
 # # with the original data
 # copy_exec_envr() {
 #     if [[ -e $1 ]]; then
-#         carburator print terminal fyi \
+#         carburator log debug \
 #             "Copying $provider $1 to $provisioner as .provider$1..."
 #         cp -f "$1" "$provisioner_node/.provider$1"
 #     fi
@@ -134,4 +134,4 @@ fi
 #     --provider "$provider" \
 #     --provisioner "$provisioner" || exit 120
 
-# carburator print terminal success "Digital Ocean network(s) and node(s) destroyed."
+# carburator log success "Digital Ocean network(s) and node(s) destroyed."
